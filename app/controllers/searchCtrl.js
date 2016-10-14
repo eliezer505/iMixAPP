@@ -14,13 +14,17 @@
 		var promise = $http.jsonp( "http://addb.absolutdrinks.com/quickSearch/drinks/"+ $scope.searchDrinks +"/?apiKey=5178650f2fb747a1a4c48cf9b86bd154&callback=JSON_CALLBACK");
             promise.success(function(data){
                 console.log("this is my data",data);
+                 console.log("this is my data",data.result.videos);
+                
             });
 		;
 		promise.then(successCallback,failureCallback);
 		
 		function successCallback(result){
 			console.log(result.data.result);
+			console.log(result.data.result.videos);
 			$scope.drinks=result.data.result;
+			$scope.videos=result.data.result.videos;
 		
 		}
 		function failureCallback(result){

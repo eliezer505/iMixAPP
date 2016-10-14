@@ -30,6 +30,8 @@
 
 		<!-- Theme CSS -->
 		<link href="css/grayscale.css" rel="stylesheet">
+				<!-- App CSS -->
+		<link href="css/style.css" rel="stylesheet">
 
 	</head>
 
@@ -73,39 +75,70 @@
 
 		<div ng-controller="searchCtrl">
 			<section id="about" class="container-fluid">
+<br><br><br>
 
-				<input placeholder="Search Drink" ng-model="searchDrinks" type="text" class="  search-query form-control"/>
-
+	  <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+				<input placeholder="Search Drink" ng-model="searchDrinks" type="text" class="form-control"/>
+  <span class="input-group-addon">
 				<button ng-click="getDrinks()" class="btn btn-danger">
 					<span class=" glyphicon glyphicon-search"></span>
 				</button>
+			</span>
+			</div>
+			
+			</div>
+			<BR>
 				<div class="row">
 
-					<div ng-repeat="d in drinks" class="col-sm-3 col-md-4">
+					<div ng-repeat="d in drinks" class="col-sm-6 col-md-3">
 						<div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									{{d.name}}
 								</div>
-								<div class="panel-body">
-									<P style="color:black;">
-										{{d.color}}
-									</P>
-									<P style="color:black;">
-										
-										
-								<!--video:		<video ng-href="http://assets.absolutdrinks.com/videos/{{d.videos[1].video}}"; >http://assets.absolutdrinks.com/videos/{{d.videos[1].video}}</a>-->
-									</P>
-									<p><img ng-src="http://assets.absolutdrinks.com/drinks/300x400/{{d.id}}.png">
+								<div id="target" class="panel-body">
+											<p><img ng-src="http://assets.absolutdrinks.com/drinks/200x300/{{d.id}}.png">
 									</p>
-									
+									<div class="midheight">
+									<P style="color:black; font-size: 1em;">
+										<b>Ingredients:</b>
+										<br>
+										{{d.ingredients["0"].textPlain}}
+										<br>
+										{{d.ingredients["1"].textPlain}}
+										<br>
+										{{d.ingredients["2"].textPlain}}
+										<br>
+										{{d.ingredients["3"].textPlain}}
+										<br>
+										{{d.ingredients["4"].textPlain}}
+										<br>
+										{{d.ingredients["5"].textPlain}}
+										<br>
+										{{d.ingredients["6"].textPlain}}
+										<br>
+										{{d.ingredients["7"].textPlain}}
+											<br>
+										{{d.ingredients["8"].textPlain}}
+											<br>
+										{{d.ingredients["9"].textPlain}}
+									</P>
+									<p style="color:black;  font-size: 1em;">
+										<b>Instructions:</b> {{d.descriptionPlain}}
+									</p>
 								</div>
+									<P  style="color:black;">
 
+										<a href="http://assets.absolutdrinks.com/videos/{{d.videos[1].video}}";>How to?</a>
+									</P>
 							
+
+								</div>
 
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 
@@ -118,11 +151,11 @@
 			<div class="download-section">
 				<div class="container">
 					<div class="col-lg-8 col-lg-offset-2">
-						<h2>FOOTIT</h2>
+						<h2>Share&Download</h2>
 						<p>
-							HERE I WILL PUT THE OPTIONS WHERE YOU CAN BUY IT
+							The project is avilable on Github:
 						</p>
-						<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+						<a href="https://github.com/eliezer505/iMixAPP" class="btn btn-default btn-lg">Visit Github Page</a>
 					</div>
 				</div>
 			</div>
