@@ -1,0 +1,59 @@
+<div id="margin">
+
+<h1> Top 10</h1>
+
+					<div class="input-group stylish-input-group">
+
+						<form >
+							<select name="Country" data-width="100%" ng-model="searchDrinks" ng-keyup="$event.keyCode == 13 && getDrinks()" class="form-control form-control-lg selectpicker" multiple class="form-control" id="sel2">
+								<option value="Israel" data-content="<span class='label label-success'>Israel</span>">Israel</option>
+								<option value="Australia">Australia </option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+								<option value="Israel" >Israel</option>
+							</select>
+
+							<br>
+
+							<br>
+							<span class="input-group-addon">
+								<button id="sclick" ng-click="getDrinks()" class="btn btn-danger">
+									<span class=" glyphicon glyphicon-search"></span>
+								</button></a> </span>
+						</form>
+
+					</div>
+
+		
+				<BR>
+				<div class="row">
+
+					<div ng-repeat="d in drinks" class="col-sm-9 col-md-6">
+						<div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									{{d.name}}
+								</div>
+								<div id="target" class="panel-body">
+									<p>
+										<a href="#items/{{d.id}}/{{d.name}}"><img ng-src="http://assets.absolutdrinks.com/drinks/200x300/{{d.id}}.png"></a>
+									</p>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+

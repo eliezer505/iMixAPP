@@ -1,0 +1,40 @@
+
+
+		<!-- Bootsrap Main-->
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+    <body ng-app="instafeed">
+        <section ng-controller="ShowImages as images">
+            <header>
+              <h1>Angular.js Instagram Feed</h1>
+            </header>
+
+            <div class="bar">
+                <!-- These two buttons switch the layout variable,
+                     which causes the correct UL to be shown. -->
+                <a class="list-icon" ng-class="{active: layout == 'list'}" ng-click="layout = 'list'"></a>
+                <a class="grid-icon" ng-class="{active: layout == 'grid'}" ng-click="layout = 'grid'"></a>
+            </div>
+
+ 
+          
+<div ng-show="layout == 'grid'" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect" ng-repeat="p in pics">
+        <img class="img-responsive" ng-src="{{p.images.low_resolution.url}}" alt="">
+            <div class="overlay">
+                <h2>Effect 11</h2>
+				<p> 
+					<a href="{{p.link}}">LINK HERE</a>
+				</p> 
+            </div>
+    </div>
+</div>
+            
+    </div>
+</div>
+        </section>
+
+        
+    </body>
+</html>

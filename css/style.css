@@ -1,5 +1,23 @@
+ul{
+	list-style-type: none;
+}
 
-
-.col-md-3, .col-sm-6{
-	height:920px !important;
+.btn-danger{
+	background-color:#007738 !important;
+	border-color:#007738;
+}
+.panel{
+	height:65%;
+}
+intro-text{
+	font-family: 'Anton', sans-serif!important;
+	
+}
+#sel2{
+	margin:0 auto!important;
+	height: 250px;
+	width: 250px;
+}
+#margin{
+	margin:0 auto!important;
 }

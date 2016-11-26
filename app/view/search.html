@@ -1,0 +1,56 @@
+
+		<!-- About Section -->
+		<div >
+			<section id="about" class="container-fluid">
+					
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-custom " role="navigation">
+			<div class="container">
+
+				<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+					<ul class="nav navbar-nav">
+
+					</ul>
+				</div>
+				<br>
+				<br>
+				<br>
+
+				<div id="imaginary_container">
+					<div class="input-group stylish-input-group">
+						<input placeholder="Search Drink" ng-model="searchDrinks" type="text" class="form-control" ng-keyup="$event.keyCode == 13 && getDrinks()"/>
+						<span class="input-group-addon">
+							<button id="sclick" ng-click="getDrinks()" class="btn btn-danger">
+								<span class=" glyphicon glyphicon-search"></span>
+							</button></a> </span>
+							<h1 id="bigOne"></h1>
+					</div>
+
+				</div>
+				<BR>
+								<div class="row">
+
+					<div ng-repeat="d in drinks" class="col-sm-6 col-md-3">
+						<div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									{{d.name}}
+								</div>
+								<div id="target" class="panel-body">
+									<p><a href="#items/{{d.id}}/{{d.name}}"><img ng-src="http://assets.absolutdrinks.com/drinks/200x300/{{d.id}}.png"></a>
+									</p>
+
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+	
+		</div>
+		</div>
+		</section>

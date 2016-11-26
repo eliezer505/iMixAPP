@@ -1,0 +1,79 @@
+<div ng-controller="galleryCtrl" class="ShowImages">
+
+<!-- Page Content -->
+	<div class="container">
+
+		<!-- Portfolio Item Heading -->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header"> {{pics.strDrink}} <small>{{pics.strCategory}}</small></h1>
+				
+			</div>
+		</div>
+		<!-- /.row -->
+		<!-- Item Row -->
+		<div class="row">
+
+			<div class="col-md-8" >
+				<object width="100%" height="100%"  
+				data="{{pics.strDrinkThumb}}" >
+				<img src="{{pics.strDrinkThumb}}" alt="No video or Image avilable" width="100%" height="100%"/>
+				</object>
+			</div>
+
+			<div class="col-md-4" >
+				    <a class="btn btn-social-icon btn-instagram">
+    <span class="fa fa-instagram"></span>
+  </a>
+				  <a class="btn btn-social-icon btn-twitter">
+    <span class="fa fa-twitter"></span>
+  </a>
+   <a class="btn btn-social-icon btn-facebook">
+    <span class="fa fa-facebook"></span>
+  </a>
+<div class="btn btn-social-icon btn-facebook" data-href="http://unlocking.co.il/Drink/#/items/beerbuster/Beerbuster" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Funlocking.co.il%2FDrink%2F%23%2Fitems%2F{{id}}%2F{{name}}&amp;src=sdkpreparse">Share</a></div>
+
+				<h3>Description</h3>
+				<p>
+					{{pics.strInstructions}}
+				</p>
+				<h3>Ingridients</h3>
+				<ul>
+					<li>
+						{{pics.strIngredient1}}
+					</li>
+					<li>
+						{{pics.strIngredient2}}
+					</li>
+					<li>
+						{{pics.strIngredient3}}
+					</li>
+					<li>
+						{{pics.strIngredient4}}
+					</li>
+					<li>
+						{{pics.strIngredient5}}
+					</li>
+					<li>
+						{{pics.strIngredient6}}
+					</li>
+					<li>
+						{{pics.strIngredient7}}
+					</li>
+					<li>
+						{{pics.strIngredient8}}
+					</li>
+					<li>
+						{{pics.strIngredient9}}
+					</li>
+					<li>
+						{{pics.strIngredient10}}
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	
+	<!-- /.row -->
