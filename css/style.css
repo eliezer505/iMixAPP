@@ -15,9 +15,15 @@ intro-text{
 }
 #sel2{
 	margin:0 auto!important;
-	height: 250px;
+	height: 170px;
 	width: 250px;
 }
 #margin{
 	margin:0 auto!important;
+}
+.panel2{
+	height:70%;
+}
+.tastei{
+	height:25%;
 }

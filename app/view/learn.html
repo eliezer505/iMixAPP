@@ -1,6 +1,51 @@
 <div ng-controller="learnCtrl" class="itemCtrl">
+<div id="margin">
+
+	
+<br><Br>
+	<div class="input-group stylish-input-group">
+
+
+			<br>
+
+
+		</form>
+<h1> Tastes:</h1>
+	</div>
+
+	<BR>
+	<div class="row">
+
+		<div ng-repeat="d in drinks" class="col-sm-7 col-md-4">
+			<div>
+				<div class="panel panel-default panel2">
+					<div class="panel-heading">
+					<b></b>{{$index+1}}.</b>	<b>{{d.name}}</b></b><br>  
+					</div>
+					<div id="target" class="panel-body">
+						<div class="panel-body">
+							
+							<div class="row">
+							
+									<img ng-src="http://assets.absolutdrinks.com/tastes/{{d.id}}.png" class="tastei">
+									<p style="color:black; height:40%;">
+										{{d.description}}
+									</p>
+									
+									
+								</div>
+					
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 
 </div>
-<div ng-controller="learnCtrl" class="itemCtrl">
 
-</div>
