@@ -1,7 +1,7 @@
 
 		<!-- About Section -->
 		<div >
-			<section id="about" class="container-fluid">
+			<section id="about" class="container-fluid" style="    margin: 0 auto;">
 					
 
 		<!-- Navigation -->
@@ -19,26 +19,30 @@
 
 				<div id="imaginary_container">
 					<div class="input-group stylish-input-group">
-						<input placeholder="Search Drink" ng-model="searchDrinks" type="text" class="form-control" ng-keyup="$event.keyCode == 13 && getDrinks()"/>
+						<input id="tags" placeholder="Search Drink" ng-model="searchDrinks" type="text" class="form-control" ng-keyup="$event.keyCode == 13 && getDrinks(0)"/>
 						<span class="input-group-addon">
-							<button id="sclick" ng-click="getDrinks()" class="btn btn-danger">
+							<button id="sclick" ng-click="getDrinks(0)" class="btn btn-danger">
 								<span class=" glyphicon glyphicon-search"></span>
 							</button></a> </span>
 							<h1 id="bigOne"></h1>
 					</div>
 
 				</div>
+				<ul class="pagination">
+	
+  <li ng-repeat="n in amount track by $index" ng-if="$index < 10" style="cursor:pointer"><a ng-click="next($index)">{{$index+1}}</a></li>
+</ul>
 				<BR>
 								<div class="row">
 
-					<div ng-repeat="d in drinks" class="col-sm-6 col-md-3">
+					<div ng-repeat="d in drinks" class="col-sm-3">
 						<div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									{{d.name}}
 								</div>
 								<div id="target" class="panel-body">
-									<p><a href="#items/{{d.id}}/{{d.name}}"><img ng-src="http://assets.absolutdrinks.com/drinks/200x300/{{d.id}}.png"></a>
+									<p><a href="#items/{{d.id}}/{{d.name}}"><img ng-src="http://assets.absolutdrinks.com/drinks/200x300/{{d.id}}.png" class="img-responsive"     style="width: 70%;     margin: 0 auto;"></a>
 									</p>
 
 
@@ -50,7 +54,17 @@
 					</div>
 
 				</div>
+
+ <tfoot>
+        <td colspan="3">
+          <div class="pagination">
+          	<ul class="pagination">
 	
+  <li ng-repeat="n in amount track by $index" ng-if="$index < 10" style="cursor:pointer"><a ng-click="next($index)">{{$index+1}}</a></li>
+</ul>
+          </div>
+        </td>
+      </tfoot>
 		</div>
 		</div>
 		</section>
