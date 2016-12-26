@@ -25,6 +25,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
   },
   "dependencies": {
+    "jquery-ui-dist": "^1.12.1",
     "ng-facebook": "^0.1.6",
     "ng-places-autocomplete": "^1.2.1"
   }
