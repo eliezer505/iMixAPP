@@ -19,11 +19,11 @@
       Eli Arama
   </author>
 <platform name="android" />
-<icon src="img/android-icon-36x36.png" platform="android" qualifier="ldpi" />
-<icon src="img/android-icon-48x48.png" platform="android" qualifier="mdpi" />
-<icon src="img/android-icon-72x72.png" platform="android" qualifier="hdpi" />
-<icon src="img/android-icon-96x96.png" platform="android" qualifier="xhdpi" />
-<icon src="img/android-icon-144x144.png" platform="android" qualifier="xxhdpi" />
-<icon src="img/android-icon-192x192.png" platform="android" qualifier="fr-xxhdpi" />
+<icon src="../img/android-icon-36x36.png" platform="android" qualifier="ldpi" />
+<icon src="../img/android-icon-48x48.png" platform="android" qualifier="mdpi" />
+<icon src="../img/android-icon-72x72.png" platform="android" qualifier="hdpi" />
+<icon src="../img/android-icon-96x96.png" platform="android" qualifier="xhdpi" />
+<icon src="../img/android-icon-144x144.png" platform="android" qualifier="xxhdpi" />
+<icon src="../img/android-icon-192x192.png" platform="android" qualifier="fr-xxhdpi" />
 </platform>
 </widget>
