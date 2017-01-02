@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.aramapp.imix"
+    versionCode = "1"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>iMix - The Art Of Mixing</name>
+
+  <description>
+      iMix is your personal recipe assistant,
+      more then 3000 cocktails, vodka, and drinks recipes on your hand.
+      
+  </description>
+
+  <author href="https://aramapp.info" email="aramainfo@gmail.com">
+      Eli Arama
+  </author>
+<platform name="android" />
+<icon src="img/android-icon-36x36.png" platform="android" qualifier="ldpi" />
+<icon src="img/android-icon-48x48.png" platform="android" qualifier="mdpi" />
+<icon src="img/android-icon-72x72.png" platform="android" qualifier="hdpi" />
+<icon src="img/android-icon-96x96.png" platform="android" qualifier="xhdpi" />
+<icon src="img/android-icon-144x144.png" platform="android" qualifier="xxhdpi" />
+<icon src="img/android-icon-192x192.png" platform="android" qualifier="fr-xxhdpi" />
+</platform>
+</widget>
